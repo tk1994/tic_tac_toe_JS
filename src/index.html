@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Timeline Scroller</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <div id="inputDiv">
+    <p>Enter User 1 name:</p>
+    <input id="player1-name" name="player1-name" onchange="player1nameChange(this.value)">
+    <p>Enter User 2 name:</p>
+    <input id="player2-name" name="player2-name" onchange="player2nameChange(this.value)">
+    <p>Enter size of tictactoe</p>
+    <input id="grid-size" name="grid-size" onchange="gridSizeChange(this.value)">
+    <button type="button" id="start-button">Start</button>
+  </div>
+  <div id="gameDiv">
+    <div id="gameBox">
+    </div>
+  </div>
+  <div id="resultDiv"></div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
